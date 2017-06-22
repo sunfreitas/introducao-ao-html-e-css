@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Estrutura do documento HTML5</title>
+
+	<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Oxygen" rel="stylesheet">
+
+	<style>
+		
+		body{
+			width:640px;
+			margin:0 auto;
+		}
+
+		h1, h2, h3{
+			color:rgba(0,0,0, .78);
+			font-family: 'Oswald', 'Arial', sans-serif;
+		}
+		p{
+			color:rgba(0,0,0, .64);
+			font-family: 'Oxygen', 'Arial', sans-serif;
+		}
+		.code{
+			text-indent: 1em;
+		}
+	</style>
+</head>
+<body>
+	<!-- Utilizamos a tag DIV para criar 'caixas' de conteúdo dentro do documento HTML -->
+	<div id="intro">
+		<!-- 
+		Assim como em editores de texto, no HTML podemos definir 
+		cabeçalhos para títulos, subtítulos, tópicos, etc utilizando as tags H1, H2, H3, H4, H5 e H6 
+		-->
+		<h1>Introdução</h1>
+
+		<p>
+			Abra o arquivo desta página em um editor de códigos, como o <a href="https://www.sublimetext.com/3">Sublime Text 3</a>, ou aperte as teclas <strong>CTRL+U</strong> para visualizar o código fonte.
+		</p>
+		<p>
+			Para visualizar o resultado desta página, abra seu navegador preferido. Aperte a combinação de teclas CTRL+O para buscar pelo arquivo no 
+			seu sistema operacional.
+		</p>
+	</div>
+
+	<div id="estrutura">
+		<h2>Entendendo o HTML</h2>
+		
+		<div class="topico">
+			<h3>!Doctype</h3>
+			<p>
+				Note que no início do documento você encontra a seguinte linha:
+			</p>
+
+			<p>
+				<em class="code">
+					&lt;!DOCTYPE html&gt;
+				</em>
+			</p>
+
+			<p>
+				A declaração <a href="https://developer.mozilla.org/en-US/docs/Glossary/Doctype">!Doctype</a> informa ao navegador
+				qual a versão do HTML você utilizou para criar o documento. Caso queira saber mais sobre ela visite sua página na <a href="https://en.wikipedia.org/wiki/Document_type_declaration">Wikipédia</a>.
+			</p>
+		</div>
+		
+		<div class="topico">
+			<h3>A tag &lt;html&gt;</h3>
+			<p>
+				Logo abaixo do doctype abrimos a tag html. Ela representa a <strong>raiz</strong> do documento, onde todas as demais tags serão colocadas 
+			dentro.
+			</p>
+			<p>
+				A tag html deve ser aberta com <strong>&lt;html&gt;</strong> e fechada com <strong>&lt;/html&gt;</strong>. Basta olhar para o código fonte desta página para ver como 
+				as demais tags estão '<em>aninhadas</em>' dentro da <em>html</em>.
+			</p>
+		</div>
+
+		<div class="topico">
+			<h3>A tag &lt;body&gt;</h3>
+			<p>
+				Dentro da tag html, definimos a tag body. Ela representa todo o conteúdo do documento HTML. Assim como a tag html, só 
+				pode haver uma tag body dentro de um documento HTML.
+			</p>
+			<p>
+				Esta tag também deve ser aberta e fechada de forma correta utilizando <strong>&lt;body&gt;</strong> e <strong>&lt;/body&gt;</strong>. 
+				Mais sobre a tag <a href="https://developer.mozilla.org/en/docs/Web/HTML/Element/body" target="blank">body no MDN</a>.
+			</p>
+		</div>
+		
+		<div class="topico">
+			<h3>Cabeçalhos</h3>
+			<p>
+				O título deste tópico foi colocado entre as tags <strong>&lt;h3&gt;</strong> e <strong>&lt;/h3&gt;</strong>
+			</p>
+
+			<p>
+				Esta tag representa o 3º de 6 níveis das tagas <strong>h1-h6</strong>, utilizadas para cabeçalhos de seções no HTML. Sendo <strong>&lt;h1&gt;</strong> o maior 
+				nível e <strong>&lt;h6&gt;</strong> o menor nível.
+			</p>
+			<p>As tags <strong>H</strong> devem ser abertas e fechadas da mesma forma que <strong>html</strong> e <strong>body</strong></p>
+			<p>
+				Utilizamos estas tags para representar níveis de conteúdo dento do HTML. Para representar títulos costumamos usar <strong>h1</strong>,
+				<strong>h2</strong> para subtítulos, <strong>h3</strong> para tópicos, etc.
+			</p>
+		</div>
+	</div>
+</body>
+</html>
