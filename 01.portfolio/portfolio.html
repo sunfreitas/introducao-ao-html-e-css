@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<meta charset="UTF-8">
+
+	<title>Meu Portfólio</title>
+
+	<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+
+	<style>
+		*{
+			margin:0;
+			padding:0;
+		}
+
+		#main{
+			width:100%;
+		}
+
+		.container{
+			width:80%;
+			margin:0 auto;
+		}
+
+		header, section, footer{
+			padding-top:50px;
+			padding-bottom:50px;
+		}
+
+		#apresentacao,
+		.titulo{
+			text-align: center;
+		}
+
+		.clearfix{
+			clear:both;
+		}
+		
+		.projeto,
+		.footer-item{
+			width:33.333%;
+			float:left;
+		}
+		
+		img{width:100%;}
+
+		.photo{
+			width:120px;
+		}
+
+		.photo.redonda{
+			border-radius: 60px;
+		}
+		
+		header{
+			background: #00BCD4;
+			color: #fff;
+		}
+		footer{
+			background: #212121;
+		}
+		
+		p{
+			font-family: 'Raleway', Arial, sans-serif;
+			margin-top:10px;
+			margin-bottom:10px;
+		}
+
+		#ola{
+			font-size: 42px;
+		}
+		#profissao{
+			font-size: 32px;
+		}
+		#perfil{
+			font-size:24px;
+		}
+
+		.titulo{
+			font-family: 'Oswald', Arial, sans-serif;
+			font-size: 32px;
+			color: rgba(0,0,0,.78);
+			margin-bottom: 42px;
+			display: block;
+			border-bottom: 2px solid #00BCD4;
+		}
+	</style>
+
+</head>
+<body>
+	<div id="main">
+		<header>
+			<div id="apresentacao" class="container">
+
+				<img src="./profile.jpg" alt="" class="photo redonda">
+
+				<p id="ola">Olá, me chamo <span>John Doe</span></p>
+
+				<p id="profissao">Web Designer</p>
+
+				<p id="perfil">
+					Quisque eu eleifend sapien. Sed et eros non nibh eleifend tempus. Sed rhoncus mauris in tellus viverra, in molestie turpis feugiat. Fusce massa massa, convallis ut elit ac, dictum porta odio. Aenean viverra neque id turpis maximus cursus. Etiam vitae mi eros. Duis vestibulum orci ex, in vulputate leo iaculis eget. Suspendisse suscipit tortor sit amet neque.
+				</p>
+			</div>
+		</header>
+
+		<section>
+			<div class="container">
+				<h1 class="titulo">PROJETOS</h1>
+
+				<div id="galeria">
+
+					<div class="projeto">
+						<img src="./Bons.jpg" alt="">
+					</div>
+					
+					<div class="projeto">
+						<img src="./3ddesign.2.jpg" alt="">
+					</div>
+
+					<div class="projeto">
+						<img src="./design-projects.jpg" alt="">
+					</div>
+					<div class="clearfix"></div>
+				</div>
+			</div>
+		</section>
+
+		<footer>
+			<div class="container">
+				<div id="tweets" class="footer-item">
+					<p>Tweets</p>
+					<ul>
+						<li><a href="">Quisque eu eleifend sapien</a></li>
+						<li><a href="">Quisque eu eleifend sapien</a></li>
+						<li><a href="">Quisque eu eleifend sapien</a></li>
+					</ul>
+				</div>
+
+				<div id="galeria" class="footer-item">
+					<p>Galeria</p>
+					<div class="galeria">
+						
+					</div>
+				</div>
+
+				<div id="feed" class="footer-item">
+					<form action="/">
+						<input type="text">
+						<button>Enviar</button>
+					</form>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+		</footer>
+		<div id="copyright">
+			Todos dos direitos reservados. [SEU NOME] 2017.
+		</div>
+	</div>
+</body>
+</html>
